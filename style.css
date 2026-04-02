@@ -11,7 +11,7 @@ h1 {
 
 h2 {
 	margin-top: 32px;
-	margin-bottom: 8px;
+	margin-bottom: 0;
 }
 
 .note {
@@ -33,7 +33,7 @@ h2 {
 
 .green-line {
 	border: 2px solid #44a098;
-	margin: 8px 0 12px;
+	margin: 12px 0 12px;
 }
 
 .controls p {
