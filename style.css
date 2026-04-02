@@ -69,8 +69,7 @@ h2 {
 	padding: 10px;
 	display: flex;
 	gap: 10px;
-	overflow: auto;
-	position: sticky;
+	overflow: visible;
 	top: 20px;
 }
 
