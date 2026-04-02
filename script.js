@@ -47,8 +47,6 @@ let appliedButtons = {};
 // まとめてコピー（順番付き）
 	function copyAll(event) {
 
-		let cssLines = '';
-
 		const cssText = document.getElementById('result').innerText;
 		navigator.clipboard.writeText(cssText);
 
