@@ -23,6 +23,7 @@ h2 {
 .container {
 	display: flex;
 	gap: 20px;
+	align-items: flex-start;
 }
 
 .controls {
@@ -117,7 +118,7 @@ h2 {
 button {
 	padding: 10px 16px;
 	border: none;
-	border-radius: 10px;
+	border-radius: 8px;
 	background: #44a098;
 	color: #fff;
 	cursor: pointer;
@@ -134,7 +135,7 @@ button:active {
 .button-row {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 10px;
+	margin-top: 16px;
 }
 
 /* Responsive */
