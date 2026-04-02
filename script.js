@@ -104,6 +104,7 @@ function resetAll() {
 		p.removeAttribute('style');
 		p.style.display = 'flex';
 	});
+}
 
 // 初期処理
 document.addEventListener('DOMContentLoaded', () => {
@@ -113,5 +114,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		p.style.display = 'flex';
 	});
 });
-
-}
