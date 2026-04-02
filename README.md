@@ -1,6 +1,7 @@
-# Flexbox Playground
+# Flexbox Playground（Flexbox CSS自動生成ツール）
 
 Flexboxのレイアウトを視覚的に試せるツールです。
+試したコードはワンクリックでコピー可能。
 
 ## 🔧 機能
 - プロパティをクリックで即反映
@@ -14,6 +15,7 @@ Flexboxのレイアウトを視覚的に試せるツールです。
 3. 「現在の設定をまとめてコピー」でCSS取得
 
 ## 🌐 デモ
+ブラウザで実際に操作できます👇
 https://hizumippc.github.io/flexbox-playground/
 
 ## 🛠 使用技術
