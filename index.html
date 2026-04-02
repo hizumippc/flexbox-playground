@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="POSIPRO CRIATE">
+	<meta name="description" content="時は金なり。覚えるまでは楽をしよう">
+	<title>Flexbox Playground | CSS Layout Tool</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="controls">
+
+	<h1>flexboxらくらくコピーシート</h1>
+	<p class="note">
+		① プロパティをクリック <br>
+		② プレビューで確認  <br>
+		③ コードをコピー  
+	</p>
+
+	<div class="container">
+		<div class="controls">
+			
+			<hr class="green-line">
+
+			<h2>flexコンテナ化</h2>
+			<p>
+				.container {<br>
+  				　　display: flex;　←ここ！<br>
+				　　▲▲▲▲▲　←ここに下のレイアウトコードを入れていく<br>
+				}<br>
+				<span class="code" data-category="display">display: flex;</span>
+			</p>
+
+			<hr class="green-line">
+
+			<h2>flex-direction：子要素の並ぶ向き（横・縦）</h2>
+				<p>左から右に配置　※default※<br>
+					<span class="code" data-category="flexDirection">flex-direction: row;</span>
+				</p>
+				<p>右から左に配置<br>
+					<span class="code" data-category="flexDirection">flex-direction: row-reverse;</span>
+				</p>
+				<p>上から下に配置<br>
+					<span class="code" data-category="flexDirection">flex-direction: column;</span>
+				</p>
+				<p>下から上に配置<br>
+					<span class="code" data-category="flexDirection">flex-direction: column-reverse;</span>
+				</p>
+	
+			<hr class="green-line">
+
+			<h2>flex-wrap：子要素の折り返し</h2>
+				<p>折り返しなし　※default※<br><span class="code" data-category="flexWrap">flex-wrap: nowrap;</span></p>
+				<p>折り返しあり（上から下）<br><span class="code" data-category="flexWrap">flex-wrap: wrap;</span></p>
+				<p>折り返しあり（下から上）<br><span class="code" data-category="flexWrap">flex-wrap: wrap-reverse;</span></p>
+
+			<hr class="green-line">
+			
+			<h2>justify-content：水平↔方向の揃え</h2>
+				<p>左揃え　※default※<br><span class="code" data-category="justifyContent">justify-content: flex-start;</span></p>
+				<p>右揃え<br><span class="code" data-category="justifyContent">justify-content: flex-end;</span></p>
+				<p>中央揃え<br><span class="code" data-category="justifyContent">justify-content: center;</span></p>
+				<p>両端＋均等配置<br><span class="code" data-category="justifyContent">justify-content: space-between;</span></p>
+				<p>均等配置（余白あり）<br><span class="code" data-category="justifyContent">justify-content: space-around;</span></p>
+
+			<hr class="green-line">
+			
+			<h2>align-items：垂直↕方向の揃え</h2>
+				<p>伸ばす<br><span class="code" data-category="alignItems">align-items: stretch;</span></p>
+				<p>上揃え<br><span class="code" data-category="alignItems">align-items: flex-start;</span></p>
+				<p>下揃え<br><span class="code" data-category="alignItems">align-items: flex-end;</span></p>
+				<p>中央揃え（縦）<br><span class="code" data-category="alignItems">align-items: center;</span></p>
+				<p>ベースライン<br><span class="code" data-category="alignItems">align-items: baseline;</span></p>
+
+			<hr class="green-line">
+
+			<h2>align-content：複数行の揃え（行間）</h2>
+				<p>伸ばす<br><span class="code" data-category="alignContent">align-content: stretch;</span></p>
+				<p>上揃え<br><span class="code" data-category="alignContent">align-content: flex-start;</span></p>
+				<p>下揃え<br><span class="code" data-category="alignContent">align-content: flex-end;</span></p>
+				<p>中央揃え<br><span class="code" data-category="alignContent">align-content: center;</span></p>
+				<p>上下均等配置<br><span class="code" data-category="alignContent">align-content: space-between;</span></p>
+				<p>上下均等（余白あり）<br><span class="code" data-category="alignContent">align-content: space-around;</span></p>
+		</div>
+
+		<div class="preview-wrapper">
+
+			<div class="preview-group">
+				<p>4要素</p>
+				<div class="preview">
+					<div class="box">1</div>
+					<div class="box">2</div>
+					<div class="box">3</div>
+					<div class="box">4</div>
+				</div>
+			</div>
+
+			<div class="preview-group">
+				<p>8要素</p>
+				<div class="preview">
+					<div class="box">1</div>
+					<div class="box">2</div>
+					<div class="box">3</div>
+					<div class="box">4</div>
+					<div class="box">5</div>
+					<div class="box">6</div>
+					<div class="box">7</div>
+					<div class="box">8</div>
+				</div>
+			</div>
+
+			<div class="preview-group">
+				<h3>現在のCSS</h3>
+				<pre id="result"></pre>
+				<div class="button-row">
+					<button onclick="copyAll(event)">現在の設定をまとめてコピー</button>
+					<button onclick="resetAll()">リセット</button>
+				</div>
+			</div>
+			
+		</div>
+			
+	</div>	
+
+	<script src="script.js" defer></script>
+
+</body>
+
+</html>
