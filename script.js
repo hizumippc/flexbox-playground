@@ -105,7 +105,13 @@ function resetAll() {
 		p.style.display = 'flex';
 	});
 
-	document.addEventListener('DOMContentLoaded', () => {
-		updateResult();
+// 初期処理
+document.addEventListener('DOMContentLoaded', () => {
+	updateResult();
+
+	previews.forEach(p => {
+		p.style.display = 'flex';
 	});
+});
+
 }
