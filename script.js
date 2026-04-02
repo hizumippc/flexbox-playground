@@ -105,5 +105,7 @@ function resetAll() {
 		p.style.display = 'flex';
 	});
 
-	updateResult();
+	document.addEventListener('DOMContentLoaded', () => {
+		updateResult();
+	});
 }
