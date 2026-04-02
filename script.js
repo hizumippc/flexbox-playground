@@ -102,6 +102,8 @@ function resetAll() {
 		p.removeAttribute('style');
 		p.style.display = 'flex';
 	});
+	
+	updateResult(); 
 }
 
 // 初期処理
