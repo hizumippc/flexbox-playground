@@ -135,7 +135,7 @@ button:active {
 			flex-direction: column;
 		}
 		.preview-wrapper {
-			order: -1; 
+			order: 1; 
 			position: static;
 		}
 	}
