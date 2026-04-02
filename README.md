@@ -14,7 +14,7 @@ Flexboxのレイアウトを視覚的に試せるツールです。
 3. 「現在の設定をまとめてコピー」でCSS取得
 
 ## 🌐 デモ
-（ここにGitHub PagesのURLを貼る）
+https://hizumippc.github.io/flexbox-playground/
 
 ## 🛠 使用技術
 - HTML
