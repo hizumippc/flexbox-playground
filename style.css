@@ -135,3 +135,14 @@ button:active {
 	justify-content: space-between;
 	margin-top: 10px;
 }
+
+/* Responsive */
+	@media (max-width: 768px) {
+		.container {
+			flex-direction: column;
+		}
+		.preview-wrapper {
+			order: -1; 
+		}
+	}
+}
