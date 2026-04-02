@@ -2,7 +2,7 @@ body {
 	font-family: sans-serif;
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
+	margin: 24px;
 }
 
 h1 {
@@ -27,21 +27,17 @@ h2 {
 
 .controls {
 	flex: 1;
-	max-width: 80%;
+	max-width: 700px;
 }
 
 .green-line {
 	border: 2px solid #44a098;
-	margin: 0 0 12px;
+	margin: 8px 0 12px;
 }
 
 .controls p {
 	margin-left: 1em;
 	margin-bottom: 8px;
-}
-
-.controls h2 {
-	margin-top: 30px;
 }
 
 .code {
